@@ -1,0 +1,107 @@
+<!DOCTYPE html:5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="StyleDocteur.css">
+</head>
+<body>
+    <body>
+        <div>
+            <fieldset>
+                <legend> 
+                    Enregistrement des Patients
+                </legend>
+                <div class="d2">
+                    <label for=""><p>REFERENCE PATIENT(E):</p></label>
+                    <input type="text"  id="sel1">
+                </div>
+                <div class="d2">
+                    <label for="sel"><p> NOM :</p></label>
+                    <input type="text" id="sel2"required >
+                </div>
+                <div class="d2">
+                    <label for="sel"><p> PRENOMS :</p></label>
+                    <input type="text" id="sel3"required >
+                </div>
+                <div class="d2">
+                    <label for=""><p> AGE </p> </label>
+                    <input type="text"  id="sel4">
+                </div>
+                <div class="d2">
+                    <label for="sel"><p> GENRE : </p> </label>
+                    <input type="text" id="sel5"required >
+                </div>
+                <div class="d2">
+                    <label for="sel"><p> TAILLE:</p> </label>
+                    <input type="text"id="sel6"required >
+                </div>
+                
+                <div class="d2">
+                    <label for="sel"><p> POIG</p></label>
+                    <input type="text" id="sel7"required >
+                </div>
+                <div class="d2">
+                    <label for="sel"><p> CONSULTATION</p></label>
+                    <select  id="sel8"required >
+                        <Option>Cardiologie</Option>
+                        <option >Medecine</option>
+                        <option >Ophtamologie</option>
+                        <option >Dentiste</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="but">Enregistrer</button>
+                </div>
+            </fieldset>
+        </div>
+        
+        <div>
+            <table>
+                <caption>
+                    <p>LISTE DES PATIENTS</p>
+                </caption>
+                <colgroup>
+                    <col class="col1">
+                    <col class="col2">
+                    <col class="col3">
+                    <col class="col4">
+                    <col class="col5">
+                    <col class="col6">
+                    <col class="col7">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th >N° PATIENT(E)</th>
+                        <th >NOM</th>
+                        <th >PRENOMS</th>
+                        <th >AGE</th>
+                        <th >GENRE</th>
+                        <th >TAILLE</th>
+                        <th >POIG</th>
+                        <th >SPECIALITE</th>
+                        
+                </thead>
+                <tbody id="myListeP">
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <td></td> 
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    
+   <script src="JsDocteur.js"></script> 
+</body>
+</html>
